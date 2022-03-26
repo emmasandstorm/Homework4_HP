@@ -2,7 +2,7 @@ from flask import Flask
 
 myobj = Flask(__name__)
 
-name = {'name': 'Carlos'}
+name = 'Carlos'
 city_names = ['Paris', 'New york', 'Tokyo', 'Livermore']
 
 @myobj.route("/")
@@ -10,7 +10,7 @@ def home():
 	return'''
 	<html>
 		<head>
-		<h1> Welcome '''+name['name']+'''!</h1> </head>
+		<h1> Welcome '''+name+'''!</h1> </head>
 		<body> <a href = "www.google.com">not google</a>
 		<div>
 			<ul>
