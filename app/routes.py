@@ -3,7 +3,7 @@ from app import LoginForm
 from flask import render_template, request, flash, redirect
 
 
-name = {'name':'Carlos'}
+name = 'Carlos'
 city_names = [{'city':'Paris'}, {'city':'New york'}, {'city': 'Tokyo'}, {'city':'Livermore'}]
 
 @myobj.route("/", methods = ['GET','POST'])
