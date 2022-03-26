@@ -1,5 +1,5 @@
 from app import myobj
-from app import forms
+from app import LoginForm
 from flask import render_template, request, flash, redirect
 
 
