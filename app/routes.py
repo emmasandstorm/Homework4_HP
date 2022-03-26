@@ -3,10 +3,10 @@ from app import LoginForm
 from flask import render_template, request, flash, redirect
 
 
-name = 'Carlos'
+name = {'name':'Carlos'}
 city_names = [{'city':'Paris'}, {'city':'New york'}, {'city': 'Tokyo'}, {'city':'Livermore'}]
 
-@myobj.route("/", methods = ['POST'])
+@myobj.route("/", methods = ['GET','POST'])
 def home():
 	form = LoginForm()
 	if form.validate_on_submit():
