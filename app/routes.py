@@ -5,7 +5,7 @@ from flask import render_template, request, flash, redirect
 
 name = 'Carlos'
 city_names = [{'city':'Paris'}, {'city':'New york'}, {'city':'Tokyo'}, {'city':'Livermore'}]
-city_names = city_names.strip()
+
 
 @myobj.route("/", methods = ['GET','POST'])
 def home():
